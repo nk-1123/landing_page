@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 
 } /*to remove the unexpected spaces*/
 html{
@@ -40,40 +41,97 @@ letter-spacing: 0.3rem;
 /* end of hero section */
 
 /* content section */
-#content{
-    display: flex;
-    flex-direction: row;
+#content .content {
+    width: 100%;
+    height: fit-content;
+    align-content: left;
+    
+    background-color: blue;
+    
 }
 
 #content h1{
-    font-size: 1rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+    padding-bottom: 20px;
+
+}
+#content p{
+    padding-bottom: 40px;
+}
+#content a{
+    border-bottom: solid 5px palegoldenrod;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#content a:hover{
+    border-bottom: solid 5px yellow;
+    color: grey;
+    
+}
+#content .content .container{
+    display: inline-block;
+    margin: 0px;
+    height:90vh;
+    width: 631.5px;
+    overflow: hidden;
+    float: left; 
+    text-align: left;
+    padding: 120px;
+    
+    
+
 }
 
 #content .content1{
-    width: 50%;
+    background-color: white;
+    
     
 }
 #content .content2{
-    width: 50vh;
-    height: 60vh;
-    background-image: url(/images/desktop/image-transform.jpg);
+    
+    
+    background-image: url(images/desktop/image-transform.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+    
+    
+
+    
+
+}
+
+#content .content3{    
+   
+    background-image: url(images/desktop/image-stand-out.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#content .content4{
+    
+    background-color: white;
+}
+#content .content5{    
+    background-image: url(images/desktop/image-graphic-design.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#content .content6{
+    background-image: url(images/desktop/image-photography.jpg);
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
 
+} 
+#content .content6, .content5{
+    padding-top: 300px !important; 
+    color: rgb(51, 46, 46);
+    text-align: center !important;
 }
-#content .content3{    
-    width: 50%;
-}
-#content .content4{
-    width: 50%;
 
-}
-#content .content5{    
-    width: 50%;
-}
-#content .content6{
-    width: 50%;
-
-}
 /* end of content section */
