@@ -7,7 +7,11 @@
 } /*to remove the unexpected spaces*/
 html{
     font-size : 18px;
-    font-family: 'Barlow';
+    font-family: 'Barlow', sans-serif;
+
+}
+html h1{
+    font-family: 'Fraunces', serif;
 }
 a{
     text-decoration: none;/*to remove underline from anchor tag*/
@@ -45,9 +49,6 @@ letter-spacing: 0.3rem;
     width: 100%;
     height: fit-content;
     align-content: left;
-    
-    background-color: blue;
-    
 }
 
 #content h1{
@@ -63,6 +64,8 @@ letter-spacing: 0.3rem;
     border-bottom: solid 5px palegoldenrod;
     text-transform: uppercase;
     font-weight: 600;
+    color: hsl(220, 5%, 12%);
+    font-family: "fraunces", sans-serif;
 }
 #content a:hover{
     border-bottom: solid 5px yellow;
@@ -78,15 +81,10 @@ letter-spacing: 0.3rem;
     float: left; 
     text-align: left;
     padding: 120px;
-    
-    
-
 }
 
 #content .content1{
     background-color: white;
-    
-    
 }
 #content .content2{
     
@@ -138,27 +136,27 @@ letter-spacing: 0.3rem;
 
 /* client section */
 #client .client{
-    padding: 80px;
+    padding: 50px;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    align-items: center;
+    text-align: center;
 }
 #client h1{
-    text-align: center;
+    display: flex;
+    justify-content: center;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 50px 50px 50px 0px;
     letter-spacing: .5rem;
     color: gray;
+    padding-bottom: opx;
 }
 #client .container{
     display: inline-block;
     width: 350px;
-    align-items: center;
-    justify-content: center;
+    height: 70vh;
     padding: 50px;
     text-align: center;
-
+    padding-top: 80px;
+    
 }
 #client img{
     height: 50px;
@@ -167,7 +165,7 @@ letter-spacing: 0.3rem;
     margin-bottom: 10px;
 }
 #client p{
-    padding: 20px;
+    padding: 15px;
     padding-bottom: 50px;
 }
 #client h2{
@@ -181,3 +179,86 @@ letter-spacing: 0.3rem;
     font-weight: 500;
 }
 /* end of client section */
+
+/* images section */
+#images .image{
+    /* text-align: center;  */
+    width: 100%;
+}
+#images img{
+    display: flexbox;
+    float: left;
+    height: 410px;
+    width: 315.8px;
+}
+/* end of images section */
+
+/* footer section */
+.footer{
+    background-color: hsl(168, 49%, 59%); 
+    text-align: center; 
+}
+
+.footer .company{
+    color: hsl(167, 32%, 23%);
+    padding: 30px;
+    padding-bottom: 0px;
+    
+}
+.footer .f_menu li{
+    display: inline-block;
+    margin: 30px;
+    list-style-type: none;
+    color: hsl(35, 17%, 73%);
+}
+.footer .f_menu a{
+    color: hsl(167, 32%, 23%);
+    font-weight: 550;
+}
+.footer .f_menu li a:hover, a:visited{
+    color: hsl(36, 42%, 95%);
+}
+.footer .socials img{
+    display: inline-block;
+    margin: 30px 10px 30px 10px;
+}
+
+/* end of footer section */
+
+/* menu tab section */
+#menu .menu_tab{
+    display: inline-block;
+    padding: 15px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+#menu h1{
+    font-family: "Barlow", serif;
+    float: left;
+    color: white;
+}
+
+#menu .menu_tab li{
+    display: flexbox;
+    float: right;
+    height: 50px;
+    width: 80px;
+    list-style-type: none;
+    text-align: center;
+    color: white;
+}
+span{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-weight: 10;
+}
+span:hover{
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px 10px 5px 10px;
+    transition: .5s ease background-color;
+    transition-property: background-color, color;
+}
+/* end of menu tab section */

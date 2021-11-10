@@ -6,6 +6,9 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Fraunces:wght@900&display=swap" rel="stylesheet">
   <title>landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 
@@ -15,11 +18,25 @@
   </style> -->
 </head>
 <body>
+  <div class="front">
+    <section id="menu">
+    <div class="menu_tab">
+      <h1><b>sunnyside</b></h1>
+      <ul>
+        <li><span>Contact</span></li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Projects</li>
+      </ul>
+    </div>
+  </section>
   <section id="hero">
     <div class="hero container">
       <h1>We are creatives</h1>
     </div>
   </section>
+</div>
+  
 
   <section id="content">
     <div class="content">
@@ -81,31 +98,39 @@
   </section>
 
   <section id="images">
-    <img src="images/desktop/image-gallery-milkbottles.jpg" alt="milkbottles">
-    <img src="images/desktop/image-gallery-orange.jpg" alt="orange">
-    <img src="images/desktop/image-gallery-cone.jpg" alt="icecream-cone">
-    <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="sugarcubes">
+    <div class="image">
+      <img src="images/desktop/image-gallery-milkbottles.jpg" alt="milkbottles">
+      <img src="images/desktop/image-gallery-orange.jpg" alt="orange">
+      <img src="images/desktop/image-gallery-cone.jpg" alt="icecream-cone">
+      <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="sugarcubes">
+    </div>
+    
   </section>
 
   <footer>
-    <div class="company container">
-      <h1>sunnyside</h1>
+    <div class="footer">
+      <div class="company container">
+        <h1>sunnyside</h1>
+      </div>
+      <div class="f_menu">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+        </ul>
+      </div>
+      <div class="socials">
+        <a href="#"><img src="images/icon-facebook.svg" alt="facebook"></a>
+        <a href="https://www.instagram.com/_nk1123/" target="_blank"><img src="images/icon-instagram.svg" alt="instagram"></a>
+        <a href="#"><img src="images/icon-twitter.svg" alt="twitter"></a>
+        <a href="#"><img src="images/icon-pinterest.svg" alt="pinterest"></a>
+      </div>
+      <div class="challenge container">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Nikita</a>.</p>
+      </div>
     </div>
-    <div class="f_menu">
-      <p><a href="#">About</a></p>
-      <p><a href="#">Services</a></p>
-      <p><a href="#">Projects</a></p>
-    </div>
-    <div class="socials">
-      <img src="images/icon-facebook.svg" alt="facebook">
-      <img src="images/icon-instagram.svg" alt="instagram">
-      <img src="images/icon-twitter.svg" alt="twitter">
-      <img src="images/icon-pinterest.svg" alt="pinterest">
-    </div>
-    <div class="challenge container">
-    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.</p>
-    </div>
+    
   </footer>
 
   <!-- <section id="menu">
